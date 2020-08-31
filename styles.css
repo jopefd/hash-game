@@ -16,15 +16,31 @@
 }
 
 body {
-	background-color: red;
+	background-color:#a9e4ef;
 }
 
 header {
 	display: flex;
-	background-color: blue;
+
 }
 
-.casa {
+.tabuleiro {
+	margin: auto;
+	display: flex;
+	width: 240px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.row-a,
+.row-b,
+.row-c {
+	display: flex;
 	width: 80px;
 	height: 80px;
+	border: 2px solid #7a306c;
+	justify-content: center;
+
+	align-items: center;
+
 }

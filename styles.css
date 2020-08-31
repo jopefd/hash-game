@@ -1,6 +1,30 @@
-/* Color pallete */
+/* Color pallete
 #7a306c
 #8e8dbe
 #a9e4ef
 #81f495
-#96f550
+#96f550 */
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Peta&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	box-sizing: border-box;
+	font-family: "Lexend Peta", sans-serif;
+}
+
+body {
+	background-color: red;
+}
+
+header {
+	display: flex;
+	background-color: blue;
+}
+
+.casa {
+	width: 80px;
+	height: 80px;
+}

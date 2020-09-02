@@ -15,32 +15,78 @@
 	font-family: "Lexend Peta", sans-serif;
 }
 
-body {
-	background-color:#a9e4ef;
-}
-
 header {
 	display: flex;
+	justify-content: center;
+	position: absolute;
+	z-index: 1;
+}
 
+#mostrador {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.tabuleiro-background {
+	background-color: #a9e4ef;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
 }
 
 .tabuleiro {
-	margin: auto;
 	display: flex;
-	width: 240px;
+	width: 360px;
 	flex-wrap: wrap;
-	justify-content: center;
+}
+
+#x div {
+	background-color: #8e8dbe;
+	height: 0px;
+	width: 110px;
+	border: 6px solid #8e8dbe;
+}
+
+#x-slash-1 {
+	transform: translate(0, 6px) rotate(45deg);
+}
+
+#x-slash-2 {
+	transform: translate(0, -6px) rotate(-45deg);
+}
+
+#o {
+	height: 86px;
+	width: 86px;
+	border: 12px solid #8e8dbe;
+	border-radius: 50%;
 }
 
 .row-a,
 .row-b,
 .row-c {
 	display: flex;
-	width: 80px;
-	height: 80px;
-	border: 2px solid #7a306c;
+	width: 120px;
+	height: 120px;
+	border: 6px solid #7a306c;
 	justify-content: center;
-
 	align-items: center;
+}
 
+.row-a {
+	border-top: 0;
+}
+
+.column-3 {
+	border-right: 0;
+}
+
+.row-c {
+	border-bottom: 0;
+}
+
+.column-1 {
+	border-left: 0;
 }

@@ -11,11 +11,11 @@ function atualizaMostrador() {
 		return;
 	}
 	if(playTime == player1) {
-		let player = document.getElementById("x-or-o");
-		player.innerHTML = `<div id="x"><div id="x-slash-1"></div><div id="x-slash-2"></div></div>`;
+		let player = document.getElementById("mostrador");
+		player.innerHTML = `<span>Vez do X</span>`;
 	} else {
-		let player = document.getElementById("x-or-o");
-		player.innerHTML = `<div id='o'></div>`;
+		let player = document.getElementById("mostrador");
+		player.innerHTML = `<span>Vez do O</span>`;
 	}
 }
 
@@ -26,7 +26,6 @@ function inicializarEspacos() {
 			if(gameOver){
 				return;
 			}
-
 			if(this.children.length == 0) {
 				if(playTime == player1) {
 					this.innerHTML = `<div id="x"><div id="x-slash-1"></div><div id="x-slash-2"></div></div>`;
